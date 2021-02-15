@@ -1,0 +1,8 @@
+tls:
+  certificates:
+    - certFile: C:\etc\traefik\certs\cd.crt
+      keyFile: C:\etc\traefik\certs\cd.key
+    - certFile: C:\etc\traefik\certs\cm.crt
+      keyFile: C:\etc\traefik\certs\cm.key
+    - certFile: C:\etc\traefik\certs\id.crt
+      keyFile: C:\etc\traefik\certs\id.key

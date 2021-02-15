@@ -1,0 +1,8 @@
+/.vscode/*
+/data/mssql-data/*
+!/data/mssql-data/.gitkeep
+/data/solr-data/*
+!/data/solr-data/.gitkeep
+
+/data/traefik/certs/*
+!/data/traefik/certs/.gitkeep
