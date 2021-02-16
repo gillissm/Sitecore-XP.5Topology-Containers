@@ -34,9 +34,7 @@ $ErrorActionPreference = "Stop";
 if (-not (Test-Path $LicenseXmlPath)) {
     throw "Did not find $LicenseXmlPath"
 }
-if (-not (Test-Path $LicenseXmlPath -PathType Leaf)) {
-    throw "$LicenseXmlPath is not a file"
-}
+
 
 # Check for Sitecore Gallery
 Import-Module PowerShellGet
