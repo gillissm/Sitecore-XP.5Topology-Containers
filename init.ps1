@@ -26,7 +26,10 @@ Param (
     $CDHost = "cd.local",
 
     [string]
-    $IDHost = "id.local"
+    $IDHost = "id.local",
+
+    [string]
+    $SolrPort = "8995"
 )
 
 $ErrorActionPreference = "Stop";
@@ -93,6 +96,9 @@ Set-DockerComposeEnvFileVariable "ID_HOST" -Value $IDHost
 
 # COMPOSE_PROJECT_NAME
 Set-DockerComposeEnvFileVariable "COMPOSE_PROJECT_NAME" -Value $ComposeProjectName
+
+# SolrPort
+Set-DockerComposeEnvFileVariable "SOLR_PORT" -Value $SolrPort
 
 ##################################
 # Configure TLS/HTTPS certificates
